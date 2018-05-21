@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> something</title>
+        <style>
+            .wrapper{
+                font-family: san-serif;
+                width:80%;
+                margin:0 auto;
+                position: relative;
+            }
+            img{
+                opacity:1;
+                display:block;
+                width:100%;
+                height:auto;
+                transition:.5s ease;
+            }
+            .content{
+                position:absolute;
+                top:45%;
+                transform:translate(-50%,-50%);
+                -ms-transform:translate(-50%, -50%);
+               font-size:60px;
+               color:#fff;
+               white-space:nowrap;
+               overflow:hidden;
+                
+            }
+            .content a{
+                font-size:24px;
+                display:block;
+                background-color:pink;
+                text-align:center;
+                padding:10px;
+                cursor:pointer;
+            }
+            
+            .overlay{
+                opacity:0
+            }
+            .wrapper:hover img {
+                opacity: .5;
+            }
+            .wrapper:hover .overlay{
+                opacity:1;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+  <div class ="wrapper">
+      <img src = "Images/image.jpg">
+      <div class = "overlay">
+          <div class ="content">
+              
+          </div>
+      </div>
+      
+      
+  </div>
+    </body>
+</html>
